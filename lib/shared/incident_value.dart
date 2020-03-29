@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class IncidentValue extends StatelessWidget {
   final String value;
@@ -12,7 +13,7 @@ class IncidentValue extends StatelessWidget {
         padding: EdgeInsets.fromLTRB(20, 8, 0, 0),
         child: Text(
           value,
-          style: TextStyle(
+          style: GoogleFonts.roboto(
             fontSize: 15,
             color: Color(0xff737380),
           ),

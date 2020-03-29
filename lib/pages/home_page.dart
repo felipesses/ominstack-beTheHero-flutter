@@ -18,8 +18,7 @@ class _HomePageState extends State<HomePage> {
   List incidentsData;
   Texts texts = Texts();
 
-  static FlutterMoneyFormatter fmf =
-      FlutterMoneyFormatter(amount: 12345678.9012345);
+  static FlutterMoneyFormatter fmf = FlutterMoneyFormatter();
 
   MoneyFormatterOutput fo = fmf.output;
 
@@ -49,7 +48,7 @@ class _HomePageState extends State<HomePage> {
           physics: ScrollPhysics(),
           children: <Widget>[
             Container(
-              padding: const EdgeInsets.fromLTRB(20, 60, 0, 0),
+              padding: const EdgeInsets.fromLTRB(20, 20, 0, 0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[
@@ -57,24 +56,25 @@ class _HomePageState extends State<HomePage> {
                     'assets/logo@2x.png',
                     width: 100,
                   ),
-                  texts.casos('Total de casos: ${incidentsData.length}')
+                  texts.casos('Total de ', '${incidentsData.length} casos.')
                 ],
               ),
             ),
             SizedBox(height: 50),
             texts.title('Bem-vindo!'),
             SizedBox(height: 20),
-            texts.subTitle('Escolha um dos casos abaixo e salve o dia'),
+            texts.subTitle('Escolha um dos casos abaixo e salve o dia!'),
             SizedBox(height: 20),
             ListView.builder(
                 physics: ScrollPhysics(),
                 shrinkWrap: true,
-                itemCount: incidentsData.length,
+                itemCount:
+                    incidentsData.length == 0 ? null : incidentsData.length,
                 itemBuilder: (BuildContext context, int index) {
                   return Container(
                     height: 310,
                     width: 120,
-                    padding: EdgeInsets.fromLTRB(10, 20, 25, 20),
+                    padding: EdgeInsets.fromLTRB(10, 20, 25, 10),
                     child: Card(
                       elevation: 5,
                       shape: RoundedRectangleBorder(
@@ -113,11 +113,11 @@ class _HomePageState extends State<HomePage> {
                                     .output
                                     .symbolOnLeft),
                             Padding(
-                              padding: EdgeInsets.fromLTRB(5, 10, 0, 0),
+                              padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
                               child: Row(
                                 children: <Widget>[
                                   DetailsButton(
-                                    text: 'Veja mais detalhes',
+                                    text: 'Ver mais detalhes',
                                     pressed: () {
                                       Navigator.push(
                                           context,

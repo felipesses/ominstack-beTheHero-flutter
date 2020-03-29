@@ -14,8 +14,8 @@
 </hr>
 
 <div>
-   <a target="_blank" rel="noopener noreferrer" href=""><img width="225" style="max-width:100%;"></a>
-<a target="_blank" rel="noopener noreferrer" href="https://i.imgur.com/R4TNBdb.png"><img align="center" src="" alt="drawing" height="450" data-canonical-src="https://i.imgur.com/R4TNBdb.png" style="max-width:100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href=""><img width="225" style="max-width:100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://i.imgur.com/R4TNBdb.png"><img align="center" src="https://i.imgur.com/R4TNBdb.png" alt="drawing" height="450" data-canonical-src="https://i.imgur.com/R4TNBdb.png" style="max-width:100%;"></a>
 
 </div>
 

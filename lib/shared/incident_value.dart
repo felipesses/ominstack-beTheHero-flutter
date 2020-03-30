@@ -10,7 +10,7 @@ class IncidentValue extends StatelessWidget {
   Widget build(BuildContext context) {
     return Builder(builder: (context) {
       return Padding(
-        padding: EdgeInsets.fromLTRB(20, 8, 0, 0),
+        padding: EdgeInsets.fromLTRB(20, 10, 0, 5),
         child: Text(
           value,
           style: GoogleFonts.roboto(

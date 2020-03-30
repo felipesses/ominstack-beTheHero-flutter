@@ -11,7 +11,7 @@ class DetailsButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Builder(builder: (context) {
       return Padding(
-        padding: EdgeInsets.fromLTRB(5, 10, 0, 0),
+        padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
         child: Row(
           children: <Widget>[
             FlatButton(
@@ -22,19 +22,24 @@ class DetailsButton extends StatelessWidget {
                   Text(
                     text,
                     style: GoogleFonts.roboto(
-                      fontSize: 15,
-                      color: Color(0xFFe02041),
+                      fontSize: 16,
+                      color: Color(0xFFE92041),
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.only(left: 130),
+                    padding: EdgeInsets.only(left: 100),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: <Widget>[
-                        Icon(
-                          Icons.arrow_forward,
-                          color: Color(0xFFe02041),
+                        IconButton(
+                          iconSize: 20.0,
+                          icon: Icon(Icons.arrow_forward),
+                          disabledColor: Color(0xFFE92041),
+                          focusColor: Color(0xFFE92041),
+                          highlightColor: Color(0xFFE92041),
+                          hoverColor: Color(0xFFE92041),
+                          splashColor: Color(0xFFE92041),
                         ),
                       ],
                     ),

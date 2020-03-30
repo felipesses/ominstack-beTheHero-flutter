@@ -18,9 +18,7 @@ class _HomePageState extends State<HomePage> {
   List incidentsData;
   Texts texts = Texts();
 
-  static FlutterMoneyFormatter fmf = FlutterMoneyFormatter();
-
-  MoneyFormatterOutput fo = fmf.output;
+  FlutterMoneyFormatter fmf = FlutterMoneyFormatter(amount: 123456789);
 
   getIncidents() async {
     http.Response response =
@@ -40,7 +38,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[300],
+      backgroundColor: Color(0xfff0f0f5),
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
@@ -72,11 +70,11 @@ class _HomePageState extends State<HomePage> {
                     incidentsData.length == 0 ? null : incidentsData.length,
                 itemBuilder: (BuildContext context, int index) {
                   return Container(
-                    height: 310,
+                    height: 300,
                     width: 120,
-                    padding: EdgeInsets.fromLTRB(10, 20, 25, 10),
+                    padding: EdgeInsets.fromLTRB(15, 10, 15, 0),
                     child: Card(
-                      elevation: 5,
+                      color: Colors.white,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.all(
                           Radius.circular(8.0),
@@ -94,11 +92,11 @@ class _HomePageState extends State<HomePage> {
                             ),
                             IncidentProperty(text: 'ONG:'),
                             IncidentValue(
-                              value: "${incidentsData[index]["title"]}",
+                              value: "${incidentsData[index]["name"]}",
                             ),
                             IncidentProperty(text: 'CASO:'),
                             IncidentValue(
-                              value: "${incidentsData[index]["description"]}",
+                              value: "${incidentsData[index]["title"]}",
                             ),
                             IncidentProperty(text: 'VALOR:'),
                             IncidentValue(

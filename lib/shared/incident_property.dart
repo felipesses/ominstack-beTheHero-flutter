@@ -10,7 +10,7 @@ class IncidentProperty extends StatelessWidget {
   Widget build(BuildContext context) {
     return Builder(builder: (context) {
       return Padding(
-        padding: EdgeInsets.fromLTRB(20, 20, 0, 0),
+        padding: EdgeInsets.fromLTRB(20, 25, 0, 0),
         child: Text(
           '${text}',
           style: GoogleFonts.roboto(

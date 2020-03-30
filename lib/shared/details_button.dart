@@ -34,6 +34,7 @@ class DetailsButton extends StatelessWidget {
                       children: <Widget>[
                         IconButton(
                           iconSize: 20.0,
+                          onPressed: null,
                           icon: Icon(Icons.arrow_forward),
                           disabledColor: Color(0xFFE92041),
                           focusColor: Color(0xFFE92041),

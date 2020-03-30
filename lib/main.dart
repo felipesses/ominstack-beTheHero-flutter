@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:omnistack_bethehero_flutter/pages/home_page.dart';
+import 'package:omnistack_bethehero_flutter/pages/splash_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Be The Hero',
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: SplashPage(),
       theme: ThemeData(primarySwatch: Colors.red),
     );
   }

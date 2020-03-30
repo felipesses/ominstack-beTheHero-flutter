@@ -22,7 +22,7 @@ dependencies:
   http: ^0.12.0+4
   flutter_money_formatter: ^0.8.3
   google_fonts: ^0.3.10
-
+  
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -30,8 +30,15 @@ dependencies:
   cupertino_icons: ^0.1.2
 
 dev_dependencies:
+  flutter_launcher_icons: ^0.7.4
   flutter_test:
     sdk: flutter
+flutter_icons:
+  ios: true
+  android: true
+  image_path_ios: "assets/icon.png"
+  image_path_android: "assets/icon.png"
+  
 
 
 # For information on the generic Dart part of this file, see the

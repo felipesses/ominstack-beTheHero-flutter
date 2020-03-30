@@ -1,16 +1,31 @@
-# omnistack_bethehero_flutter
+# Omnistack Flutter App - Be The Hero
+<h1 align="center">
+   <br>
+   Be The Hero
+   <br>
+</h1>
+<p align="center">Aplicação da Semana 11 da Omnistack da Rocketseat feita em Flutter.</p>
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT" rel="nofollow">
+    <img src="https://camo.githubusercontent.com/311762166ef25238116d3cadd22fcb6091edab98/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6963656e73652d4d49542d626c75652e737667" alt="License MIT" data-canonical-src="https://img.shields.io/badge/License-MIT-blue.svg" style="max-width:100%;">
+  </a>
+</p>
+<hr>
+</hr>
 
-A new Flutter project.
+<div>
+<a target="_blank" rel="noopener noreferrer" href=""><img width="225" style="max-width:100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://i.imgur.com/R4TNBdb.png"><img align="center" src="https://i.imgur.com/R4TNBdb.png" alt="drawing" height="450" data-canonical-src="https://i.imgur.com/R4TNBdb.png" style="max-width:100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://i.imgur.com/lcuT27R.png"><img align="center" src="https://i.imgur.com/lcuT27R.png" alt="drawing" height="450" data-canonical-src="https://i.imgur.com/lcuT27R.png" style="max-width:100%;"></a>
 
-## Getting Started
+</div>
 
-This project is a starting point for a Flutter application.
+<hr>
+</hr>
+<p>A ideia da Semana Omnistack 11 da Rocketseat foi fazer um aplicativo que ajudasse as ONGS locais a registrarem ocorrências de incidentes pela web utilizando o React, dando um valor de recompensa para quem pudesse ajudar. A pessoa que quisesse ajudar acessaria o aplicativo pelo celular (que foi feito em React Native) e entraria em contato com a ONG via WhatsApp ou por E-mail (as duas funções estão inclusas no app). Estou disponibilizando a minha versão deste aplicativo feita em Flutter, consumindo os dados da mesma API feita em NodeJS no backend da aplicação.</p>
+<p>Foi uma ótima experiência poder fazer a aplicação completa da Rocketseat e assim poder botar em prática os meus conhecimentos de Flutter</p>
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<h2>Rocketseat</h2>
+<ul>
+<li><a href="https://rocketseat.com.br/" rel="nofollow">Site da Rocketseat</a></li>
+</ul>
